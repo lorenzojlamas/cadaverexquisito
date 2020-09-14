@@ -30,28 +30,19 @@
         "sass": "^1.26.10"
     },
     "devDependencies": {
-        "@testing-library/react": "^10.4.7",
+        "@testing-library/react": "^10.4.9",
         "@types/jest": "^26.0.8",
-        "@types/node": "^12.12.21",
+        "@types/node": "^12.12.58",
         "@types/react": "^16.9.16",
         "@types/react-dom": "^16.9.4",
         "@types/react-test-renderer": "^16.9.2",
-        "@types/styled-components": "^4.4.1",
+        "@types/styled-components": "^4.4.3",
         "babel-plugin-styled-components": "^1.10.6",
         "jest": "^26.2.2",
         "prettier": "^1.19.1",
         "ts-jest": "^26.1.4",
-        "typescript": "3.7.3",
+        "typescript": "^3.7.3",
         "updtr": "^3.1.0"
-    },
-    "prettier": {
-        "trailingComma": "es5",
-        "tabWidth": 2,
-        "semi": true,
-        "bracketSpacing": true,
-        "jsxBracketSameLine": true,
-        "arrowParens": "avoid",
-        "singleQuote": true
     },
     "jest": {
         "roots": [
