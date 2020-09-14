@@ -1,8 +1,8 @@
 import '../style/index.scss';
-interface LnvAppProps {
+interface CadaverExquisitoAppProps {
   Component: any;
   pageProps: any;
 }
-export default function LnvApp({ Component, pageProps }: LnvAppProps) {
+export default function LnvApp({ Component, pageProps }: CadaverExquisitoAppProps) {
   return <Component {...pageProps} />;
 }
