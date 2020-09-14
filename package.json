@@ -6,8 +6,8 @@
         "prebuild": "npm test",
         "test": "jest && npm run lint",
         "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
-        "lint": "eslint 'src/**/*.{js,ts,tsx}'",
-        "lint:fix": "eslint 'src/**/*.{js,ts,tsx}' --fix",
+        "lint": "eslint '{pages,components,interfaces}/**/*.{js,ts,tsx}'",
+        "lint:fix": "eslint '{pages,components,interfaces}/**/*.{js,ts,tsx}' --fix",
         "dev": "next",
         "build": "next build",
         "start": "next start",
@@ -42,7 +42,14 @@
         "prettier": "^1.19.1",
         "ts-jest": "^26.1.4",
         "typescript": "^3.7.3",
-        "updtr": "^3.1.0"
+        "updtr": "^3.1.0",
+        "@typescript-eslint/eslint-plugin": "^4.1.0",
+        "@typescript-eslint/parser": "^4.1.0",
+        "cypress-multi-reporters": "^1.4.0",
+        "eslint": "^7.8.1",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-jsdoc": "^30.3.3",
+        "eslint-plugin-prettier": "^3.1.4"
     },
     "jest": {
         "roots": [
