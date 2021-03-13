@@ -3,7 +3,7 @@ import {Cadaver} from '../models/Cadaver';
 export class Cadaveres {
     public cadaveresDisponibles: Cadaver[] = [];
     public cadaveresActualizandose: Cadaver[] = [];
-    public cadaveresTerminados: Cadaver[] = [];
+    //public cadaveresTerminados: Cadaver[] = [];
 
     public async get(): Promise<Cadaver> {
         const currentCadaver =
@@ -12,7 +12,4 @@ export class Cadaveres {
         return currentCadaver;
     }
 
-    public async set(cadaver: Cadaver): Promise<boolean> {
-        return true;
-    }
 }
