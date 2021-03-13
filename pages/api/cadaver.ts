@@ -1,6 +1,5 @@
 import {NextApiRequest, NextApiResponse} from 'next';
 import {Cadaveres} from '../../controllers/Cadaveres';
-import {addCors, cors} from '../../utils/cors';
 
 const cadaveres = new Cadaveres();
 /**
@@ -14,7 +13,6 @@ async function cadaver(
     res: NextApiResponse,
 ): Promise<void> {
     // Run the middleware
-    await addCors(req, res, cors);
     if (req.method === 'GET') {
         const cadaver = await cadaveres.get();
         res.statusCode = 200;
